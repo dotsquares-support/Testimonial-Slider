@@ -1,0 +1,122 @@
+{#
+/**
+ * Testimonial Slider for Craft CMS 3.x
+ *
+ *
+ * @author    Dotsquares
+ * @copyright Copyright (c) 2021 Dotsquares
+ * @link      https://www.dotsquares.com/
+ 
+ */
+ #}
+
+{% import "_includes/forms" as forms %}
+
+<p>{{ "Testimonial Settings" }}</p>
+
+{{ forms.textField({
+    label: "Testimonial Section Color",
+    id: 'Section',
+    name: 'Section',
+    value: settings.Section,
+    type: 'text',
+    placeholder: 'Type Color name in small case',
+    required: false
+}) }}
+
+{{ forms.textField({
+    label: "Testimonial Heading",
+    id: 'Heading',
+    name: 'Heading',
+    value: settings.Heading,
+    type: 'text',
+    placeholder: 'Testimonials',
+    required: false
+}) }}
+
+</br>
+
+{{ forms.textField({
+    label: "Title",
+    id: 'Title',
+    name: 'Title',
+    value: settings.Title,
+    type: 'text',
+    required: true
+}) }}
+
+
+{{ forms.textareaField({
+    label:         "Description",
+    id:            'Description',
+    name:          'Description',
+    instructions:  "Input your Description"|t,
+    value:         settings.Description,
+    rows:          4,
+    cols:          162,
+    errors:        settings.getErrors('Description'),
+    maxlength:     250,
+    showCharsLeft: true,
+    autofocus:     settings.hasErrors('Description'),
+            required: true
+
+}) }}
+
+{{ forms.textField({
+    label: "Title",
+    id: 'Title1',
+    name: 'Title1',
+    value: settings.Title1,
+    type: 'text',
+    required: true
+}) }}
+
+
+{{ forms.textareaField({
+    label:         "Description",
+    id:            'Description1',
+    name:          'Description1',
+    instructions:  "Input your Description"|t,
+    value:         settings.Description1,
+    rows:          4,
+    cols:          162,
+    errors:        settings.getErrors('Description1'),
+    maxlength:     250,
+    showCharsLeft: true,
+    autofocus:     settings.hasErrors('Description1'),
+        required: true
+
+}) }}
+
+
+{{ forms.textField({
+    label: "Title",
+    id: 'Title2',
+    name: 'Title2',
+    value: settings.Title1,
+    type: 'text',
+    required: true
+}) }}
+
+
+{{ forms.textareaField({
+    label:         "Description",
+    id:            'Description2',
+    name:          'Description2',
+    instructions:  "Input your Description"|t,
+    value:         settings.Description2,
+    rows:          4,
+    cols:          162,
+    errors:        settings.getErrors('Description2'),
+    maxlength:     250,
+    showCharsLeft: true,
+    autofocus:     settings.hasErrors('Description2'),
+            required: true
+
+}) }}
+
+
+
+
+
+

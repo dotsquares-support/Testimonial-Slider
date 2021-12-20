@@ -1,0 +1,41 @@
+{
+  "name": "ds/craft-slider",
+  "description": "A plugin for Craft CMS that helps you add testimonial slider in your website.",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": ["craft",
+  	"cms",
+  	"craftcms",
+      	"craft-plugin",
+        "slider",
+      	"testimonial-slider"],
+  "license": "MIT",
+  "authors": [
+  	{
+          "name": "Dotsquares",
+          "homepage": "https://dotsquares.com/"
+        }
+  ],
+  "support": {
+    "email": "namita.kaloya@dotsquares.com",
+    "issues": "https://github.com/developer/repo/issues?state=open",
+    "source": "https://github.com/developer/repo",
+    "docs": "https://github.com/developer/repo/blob/master/README.md"
+  },
+  "require": {
+    "craftcms/cms": "^3.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ds\\slider\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Testimonial Slider",
+    "handle": "slider",
+    "description": "Add testimonial Slider",
+    "hasCpSection": false,
+    "hasSettings": true,
+    "class": "ds\\slider\\Slider"
+  }
+}

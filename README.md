@@ -43,4 +43,6 @@ By using Testimonial Slider you can display your customer’s reviews and testim
 
 This Testimonial Slider for Craft CMS provides a user-friendly interface that anyone, regardless of experience or skill level, may use. Install with a single click and you're ready to start adding client testimonials…
 
+By <a href="https://dotsquares.com/"> Dotsquares
+
 

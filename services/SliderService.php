@@ -16,6 +16,7 @@ use ds\slider\Slider;
 use ds\slider\resources\SliderAsset;
 
 
+
 /**
  * Slider Service
  *

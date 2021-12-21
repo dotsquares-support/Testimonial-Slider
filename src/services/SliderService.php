@@ -16,6 +16,7 @@ use ds\slider\Slider;
 use ds\slider\resources\SliderAsset;
 
 
+
 /**
  * Slider Service
  *
@@ -62,13 +63,14 @@ class SliderService extends  Component
      
   $color =  "bg-white";
 } 
-     if ($Section == 'white' || 'black')
+     elseif ($Section == "white"|| $Section== "black")
       {
         $color = 'bg-'. $Section ;
       }
-      else{
+
+      else{   
+         $color = 'bg-'.$Section.'-500' ;
       
-        $color = 'bg-'.$Section.'-500' ;
 
       }
     
